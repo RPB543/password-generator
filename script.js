@@ -33,28 +33,28 @@ passwordLength = prompt("Password must be between 8 and 128. Please choose again
 }
 
 //Confirm characters in password
-var passwordChars =[]
-
   confirmLower = prompt("Please enter a lower case letter, if you would like to include one.");
-    passwordChars = passwordChars.concat(lowerCase);
     console.log("Lower case letter is " + confirmLower);
   
-
   confirmUpper = prompt("Please enter a upper case letter, if you would like to include one.");
-  passwordChars = passwordChars.concat(upperCase);
-  console.log("Upper case letter is " + confirmUpper);
+    console.log("Upper case letter is " + confirmUpper);
 
   confirmNumber = prompt("Please enter a number, if you would like to include one.");
-  passwordChars = passwordChars.concat(numbers);
-  console.log("Number is " + confirmNumber);
+    console.log("Number is " + confirmNumber);
 
   confirmSymbol = prompt("Would you like to include a symbol?");
-  passwordChars = passwordChars.concat(symbols);
-  console.log("Symbol is " + confirmSymbol);
+    console.log("Symbol is " + confirmSymbol);
 };
 
-//for(var 1 = 0; i < passwordLength, i++) {
-  //console.log(password)
+var userChars = "confirmNumber, confirmLower, confirmSymbol, confirmUpper"
+var randomPassword = ""
+
+for(var i = 0; i < passwordLength; i++) {
+  randomPassword = userChars + [Math.floor(Math.random() * (password.Length - userChars))];
+  console.log(randomPassword);
+}
+
+generatePassword ();
 
   // Write password to the #password input
 function writePassword() {
