@@ -17,7 +17,7 @@ var numbers = ['1','2','3','4','5','6','7','8','9','0'];
 // Generate password
 function generatePassword ()  {
 
-  // Ask for length of passwrod
+  // Ask for length of password
 passwordLength = (prompt("How long would you like your password? Please choose between 8 and 128 characters."));
 
 if (passwordLength < 8 || passwordLength > 128) {
@@ -25,11 +25,7 @@ passwordLength = (prompt("Password must be between 8 and 128. Please choose agai
   console.log("Password length " + passwordLength);
   alert("Your password will have " + passwordLength + " characters.");
 
-} else if (passwordLength >= 8 && passwordLength <= 128) {
-  console.log("Password length " + passwordLength);
-  alert("Your password will have " + passwordLength + " characters.");
-
-}else {console.log("Password length " + passwordLength);
+} else {console.log("Password length " + passwordLength);
   alert("Your password will have " + passwordLength + " characters.");
 }
 
@@ -104,7 +100,8 @@ else if (confirmLower){
   userChoices = symbols;
   console.log(userChoices);
 }
-// Empty variable for the password length
+
+// Empty variable for the password 
 var passwordBlank = [];
   
 // Loop for random selection
