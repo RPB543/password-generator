@@ -1,7 +1,7 @@
 ## 03 JavaScript: Password Generator
 
 # Objective:
-*Create script that randomly generates password based on user selection criteria\
+*Create script that randomly generates password based on user selection criteria
 
 # Project Criteria 
 *Promted user to length of password which must be between 8 - 128 characters\

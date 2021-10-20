@@ -46,6 +46,7 @@ console.log("Symbol is " + confirmSymbol);
 //loop if not parameters are selected
 if (!confirmLower && !confirmUpper && !confirmNumber && !confirmSymbol) {
   alert("You must choose at least one parameter!");
+  return generatePassword();
 } 
 // 4 options selected
 else if (confirmLower && confirmUpper && confirmNumber && confirmSymbol) {
