@@ -19,15 +19,16 @@ function generatePassword ()  {
 
   // Ask for length of password
 passwordLength = (prompt("How long would you like your password? Please choose between 8 and 128 characters."));
+console.log("Password length " + passwordLength);
 
-if (passwordLength < 8 || passwordLength > 128) {
-passwordLength = (prompt("Password must be between 8 and 128. Please choose again."));
-  console.log("Password length " + passwordLength);
-  alert("Your password will have " + passwordLength + " characters.");
-
-} else {console.log("Password length " + passwordLength);
-  alert("Your password will have " + passwordLength + " characters.");
+if (passwordLength === null || passwordLength === "") {
+  alert("You must input a number!");
+  return generatePassword();
 }
+if (passwordLength < 8 || passwordLength > 128) {
+  passwordLength = (alert("Password must be between 8 and 128. Please choose again."));
+  return generatePassword();
+} 
 
 //Confirm characters in password
 confirmLower = confirm("Would you like to include a lower case letter?");
